@@ -1,0 +1,301 @@
+@import '../../styles.scss';
+@import "../../modules/fonts";
+
+// PRIMERA IMAGEN ---------------
+
+.first-line {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  background-image: url('/assets/Backgrounds/Bg_Header.png');
+
+}
+
+.second-div {
+  width: 80%;
+  margin: 0 auto;
+  display: flow-root;
+}
+
+
+body {
+  margin: 0;
+  background: #222;
+
+}
+
+.class-div {
+  float: left;
+  text-align: left;
+  padding-top: 10%;
+}
+
+h1 {
+  font-family: "Montserrat-Light" !important;
+  margin: 0px;
+  font-size: 40px;
+}
+
+.class-strong {
+  font-family: "Montserrat-Bold" !important;
+}
+
+.class-h1-wolox {
+  font-family: "Montserrat-Bold" !important;
+  color: $success;
+}
+
+.hero {
+  float: right;
+  padding-top: 2.25%;
+  transform: scaleX(-1);
+
+}
+
+// -----------------------------------------
+
+
+
+.second-line {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 5%;
+}
+
+
+.class-p {
+  float: left;
+  text-align: left;
+  width: 30%;
+  padding-top: 10%;
+
+  p {
+    font-size: 30px;
+    font-family: "Montserrat-Medium" !important;
+  }
+
+
+
+
+}
+
+.tech {
+  float: right;
+
+}
+
+// ---------------------------------------
+
+.third-line {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 5%;
+}
+
+.programmer {
+  float: left;
+  width: 60%;
+  position: relative;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .wolox {
+    @extend .centered;
+    top: 50% !important;
+  }
+
+  .button-follow {
+    @extend .centered;
+    top: 60% !important;
+  }
+}
+
+.twitter-logo {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+}
+
+.twitter-wolox {
+  position: absolute;
+  font-family: "Montserrat-ExtraLight" !important;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: white;
+}
+
+.class-button {
+  position: absolute;
+  height: 40px;
+  top: 80%;
+  left: 50%;
+  width: 30%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  border-color: $primary;
+  color: white;
+  background-color: transparent;
+  border-width: 2px;
+}
+
+
+
+
+.gray-background {
+  float: right;
+  width: 40%;
+  position: relative;
+  height: 100%;
+  background-color: rgb(225, 236, 236);
+}
+
+.gray-text {
+  top: 30%;
+  position: relative;
+}
+
+.convertir {
+  color: $primary;
+  font-family: "Montserrat-Bold" !important;
+}
+
+.ideas {
+  color: $success;
+  font-family: "Montserrat-Bold" !important;
+}
+
+.text {
+  color: $success;
+  font-size: 40px;
+  font-family: "Montserrat-Bold" !important;
+
+  .woloxers {
+    color: $primary;
+  }
+}
+
+
+// -------------------------------------------------
+
+.fourth-line {
+  width: 100%;
+  margin: 0 auto;
+  display: flow-root;
+  padding-top: 5%;
+}
+
+.title {
+  text-align: center;
+}
+
+.smiley-face {
+  color: $primary;
+}
+
+.row {
+  display: flex;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+
+  h2 {
+    font-family: "Montserrat-Light" !important;
+    font-size: 20px;
+  }
+}
+
+.class-hr {
+  border: 0;
+  height: 0;
+  /* Firefox... */
+  box-shadow: 0 0 5px 2px rgb(238, 237, 237);
+}
+
+hr.style-five:after {
+  content: "\00a0";
+}
+
+// -----------------------------------------------------
+
+.fifth-line {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 5%;
+}
+
+.h1-class {
+  font-family: "Montserrat-Bold" !important;
+}
+
+.class-div2 {
+  float: left;
+  text-align: left;
+  padding-top: 3%;
+}
+
+.requierments {
+  float: right;
+  width: 50%;
+  position: relative;
+}
+
+// .class-ul {
+//     text-align: left;
+
+//     li {
+//         font-family: "Montserrat-Medium" !important;
+//         padding: 20px;
+//     }
+// }
+
+ul.no_bullet {
+  list-style-type: none;
+  text-align: left;
+  padding: 0px;
+  margin: 0;
+}
+
+li.bullet-1 {
+  background: url('/assets/Ic_Bullet_1.svg') no-repeat left top;
+  font-family: "Montserrat-Medium" !important;
+  height: 54px;
+  padding-left: 44px;
+  padding-top: 3px;
+}
+
+li.bullet-2 {
+  background: url('/assets/Ic_Bullet_2.svg') no-repeat left top;
+  font-family: "Montserrat-Medium" !important;
+  height: 54px;
+  padding-left: 44px;
+  padding-top: 3px;
+}
+
+li.bullet-3 {
+  background: url('/assets/Ic_Bullet_3.svg') no-repeat left top;
+  font-family: "Montserrat-Medium" !important;
+  height: 54px;
+  padding-left: 44px;
+  padding-top: 3px;
+}
+
+// ------------------------------------------
+
+
+  

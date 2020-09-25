@@ -75,13 +75,13 @@ $font-lg: 20px;
     order:1;
     height:100px;
     flex:0 1 100%;
-    background: transparent;
+    background-image: url("/assets/Backgrounds/Bg_Header.png");
   }
   
   app-nav {
     order:2;
     flex: 0 1 200px;
-    background: rgb(176, 165, 199);
+    background: transparent;
   }
   
   app-main,
@@ -89,20 +89,20 @@ $font-lg: 20px;
     order:3;
     flex: 1;
     min-height:500px;
-    background: rgb(211, 216, 215);
   }
   
   app-aside {
     order:4;
     flex:0 1 200px;
-    background: rgb(149, 180, 216);
+    background: transparent;
   }
   
   app-footer {
     order:5;
-    height:100px;
+    height:600px;
     flex:0 1 100%;
-    background: rgb(119, 120, 121);
+    background-image: url("/assets/Backgrounds/Bg_Footer.png");
+
   }
 
     
