@@ -1,0 +1,122 @@
+@import '../../styles.scss';
+@import "../../modules/fonts";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-image: url("/assets/Backgrounds/Bg_Footer.png");
+font-family: "Montserrat-Regular" !important;
+
+}
+
+form {
+    width: 400px;
+    min-height: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(15, 3%, 46%, 0.31);
+    padding: 2%;
+    
+}
+form .con {
+    display: -webkit-flex;
+    display: flow-root;
+  
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+      margin: 0 auto;
+}
+
+header {
+    padding-top: 1vh;
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+
+
+
+
+input[class="form-input"]{
+    width:70%;
+    height: 50px;
+  
+    margin-top: 2%;
+    padding: 15px;
+    
+    font-family: "Montserrat-Regular" !important;
+    font-size: 16px;
+    color: #5E6472;
+    background-color: rgba(131, 172, 189, 0.253);
+  
+    outline: none;
+    border: none;
+  
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+    
+}
+input[id="txt-input"] {width:70%;}
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+    
+}
+
+
+button {
+    display: inline-block;
+    color: white;
+  
+    width: 200px;
+    height: 50px;
+    font-family: "Montserrat-Regular" !important;
+  
+    background: $primary;
+    border-radius: 5px;
+    
+    outline: none;
+    border: none;
+  
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    
+    margin: 10% auto;
+    letter-spacing: 0.05em;
+}
+
+.class-check {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.check {
+    font-family: "Montserrat-Regular" !important;
+}
+
+
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
