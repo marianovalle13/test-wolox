@@ -1,15 +1,15 @@
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+<input type="text" id="myInput"  #box (keyup)="myFunction(box.value)" placeholder="Search for names..">
 
 <div id="pattern" class="pattern">
   <ul class="list img-list">
-    <li>
-      <a href="#" class="inner">
+    <li *ngFor="let item of tecnologies">
+      <a  href="#" class="inner">
         <div class="li-img">
-          <img src="https://bradfrost.github.com/this-is-responsive/patterns/images/fpo_square.png" alt="Image Alt Text" />
+          <img src="{{item.logo}}" alt="Image Alt Text" />
         </div>
         <div class="li-text">
-          <h4 class="li-head">Title of Content</h4>
-          <p class="li-sub">Summary of content</p>
+          <h4 class="li-head">{{item.tech}}</h4>
+          <p class="li-sub">{{item.type}}</p>
         </div>
       </a>
     </li>

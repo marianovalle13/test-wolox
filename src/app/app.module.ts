@@ -11,6 +11,8 @@ import { AsideComponent } from 'src/shared/aside/aside.component';
 import { FooterComponent } from 'src/shared/footer/footer.component';
 import { PrivacyPolicyComponent } from 'src/shared/privacy-policy/privacy-policy.component';
 import { MainComponent } from 'src/shared/main/main.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { MainComponent } from 'src/shared/main/main.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

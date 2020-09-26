@@ -8,7 +8,9 @@
           <li><a href="/technologies">Tecnologías</a></li>
           <li><a href="#">Beneficios</a></li>
           <li><a href="#">Requerimentos</a></li>
-          <li><button class="class-button">Login</button></li>
+          <li *ngIf="!user"><button class="class-button" routerLink="/login">Login</button></li>
+          <li *ngIf="user"><a>{{user.email}}</a></li>
+          <li *ngIf="user"><button class="class-button" (click)="logout()">Cerrar sesión</button></li>
         </ul>
       </nav>
     </div>
