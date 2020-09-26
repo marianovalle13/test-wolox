@@ -1,32 +1,57 @@
 #myInput {
-    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+.list li {
+    background: url("https://bradfrost.github.com/this-is-responsive/patterns/images/icon_arrow_right.png") no-repeat 97% 50%;
+    border-bottom: 1px solid #ccc;
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
   }
-  
-  #myUL {
-    /* Remove default list styling */
-    list-style-type: none;
-    padding: 0;
+  .inner {
+    display: table-row;
+    overflow: hidden;
+  }
+  .li-img {
+    display: table-cell;
+    vertical-align: middle;
+    width: 30%;
+    padding-right: 1em;
+  }
+  .li-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .li-text {
+    display: table-cell;
+    vertical-align: middle;
+    width: 70%;
+  }
+  .li-head {
+    margin: 0;
+  }
+  .li-sub {
     margin: 0;
   }
   
-  #myUL li a {
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Grey background color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
+  @media all and (min-width: 45em) {
+    .list li {
+      float: left;
+      width: 50%;
+    }
   }
   
-  #myUL li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  @media all and (min-width: 75em) {
+    .list li {
+      width: 33.33333%;
+    }
   }
